@@ -25,5 +25,6 @@ export async function POST(req) {
   } catch (error) {
     console.error("Email send error:", error);
     return NextResponse.json({ error: error.message });
+    
   }
 }
