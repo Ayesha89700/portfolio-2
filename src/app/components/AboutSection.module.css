@@ -1,0 +1,111 @@
+/* AboutSection.module.css */
+
+.aboutSection {
+  color: #ffffff;
+  padding: 2rem 1rem;
+  width: 100%; /* Ensure the section takes full width */
+}
+
+/* Base container settings */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Heading and text styling */
+.heading {
+  font-size: 1.5rem; /* Default small size for mobile */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.description {
+  font-size: 0.875rem; /* Smaller font size for mobile */
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Tab container styling */
+.tabContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Content styling */
+.contentContainer {
+  margin-top: 1.5rem;
+}
+
+/* List styling */
+.list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* Responsive styles for tablets and larger devices */
+@media (min-width: 768px) {
+  .container {
+      grid-template-columns: 1fr 1fr; /* 2-column layout */
+      gap: 2rem;
+  }
+
+  .image {
+      margin-left: auto; /* Pushes image to the right */
+      margin-right: auto; /* Centers image */
+      margin-top: auto;
+  }
+
+  .heading {
+      font-size: 2rem; /* Slightly larger heading text for tablet */
+  }
+
+  .description {
+      font-size: 1rem; /* Slightly larger description text */
+  }
+}
+
+/* Responsive styles for larger screens (desktops and above) */
+@media (min-width: 1024px) {
+  .container {
+      grid-template-columns: 1fr 1fr; /* Maintain 2-column layout for larger screens */
+  }
+
+  .heading {
+      font-size: 2.5rem; /* Larger heading text for desktop */
+  }
+
+  .description {
+      font-size: 1.125rem; /* Adjust description text */
+      
+  }
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 480px) {
+  .aboutSection {
+      padding: 1rem 0.5rem; /* Reduced padding on small screens */
+  }
+
+  .heading {
+      font-size: 1.5rem; /* Smaller heading for mobile */
+  }
+
+  .description {
+      font-size: 0.875rem; /* Smaller description text for mobile */
+      text-align: justify;
+  }
+
+  .tabContainer {
+      flex-direction: column; /* Stack tabs vertically on mobile */
+      gap: 0.5rem;
+  }
+}

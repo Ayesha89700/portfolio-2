@@ -1,0 +1,124 @@
+/* EmailSection.module.css */
+
+.contactSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3rem auto;
+  padding: 4rem 1rem;
+  gap: 2rem;
+  max-width: 900px;
+  position: relative;
+  background-color: #111827;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .contactSection {
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem 2rem;
+  }
+}
+
+.bgGradient {
+  background: radial-gradient(circle, #d32cdf, #111827);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  filter: blur(80px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.contactText {
+  z-index: 10;
+  color: #f3f4f6;
+  text-align: center;
+}
+
+.contactText h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.contactText p {
+  color: #a1a1aa;
+  margin-bottom: 1.5rem;
+  max-width: 20rem;
+  line-height: 1.6;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  padding: 1rem;
+}
+
+.contactForm div {
+  margin-bottom: 1.5rem;
+}
+
+.contactForm label {
+  color: #f3f4f6;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.contactForm input,
+.contactForm textarea {
+  background-color: #1f2937;
+  border: 1px solid #6c3c6c;
+  color: #f9fafb;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 0.75rem;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #9626ca;
+  outline: none;
+}
+
+.contactForm textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitButton {
+  background-color: #b52fcf;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #4338ca;
+}
+
+.successMessage {
+  color: #10b981;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}

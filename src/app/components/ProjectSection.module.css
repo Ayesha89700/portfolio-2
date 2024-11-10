@@ -1,0 +1,70 @@
+/* ProjectSection.module.css */
+
+.projectSection {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #121212;
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.filterButton {
+    padding: 8px 16px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filterButton:hover {
+    background-color: #555;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    color: #ffffff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cardImage {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .card{
+        width: 100%;
+    }
+}

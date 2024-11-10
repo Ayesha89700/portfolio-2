@@ -1,0 +1,26 @@
+.footer {
+    border-top: 1px solid #33353f;
+    border-left: transparent;
+    border-right: transparent;
+    background-color: #111;
+    color: white;
+    padding: 3rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .developedBy {
+    opacity: 0.4;
+  }
+  
+  .rights {
+    color: #c1c1c1;
+  }
+  
