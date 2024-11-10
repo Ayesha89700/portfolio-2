@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className={styles.grid}>
         <div className={styles.textContainer}>
           <h1 className={styles.heading}>
-            <span className={styles.gradientText}>Hello, I'm</span>
+            <span className={styles.gradientText}>Hello, I&apos;m</span>
             <br />
             <TypeAnimation
               sequence={[
@@ -34,8 +34,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className={styles.description}>
-            "As a passionate UI/UX designer, I thrive on creating intuitive, user-centered designs that blend functionality with aesthetic appeal.
-            Proficient in both front-end and back-end development, I create clean, maintainable code that ensures high performance and usability."
+  As a passionate UI/UX designer, I thrive on creating intuitive, user-centered designs that blend functionality with aesthetic appeal.
+  Proficient in both front-end and back-end development, I create clean, maintainable code that ensures high performance and usability.
           </p>
           <div className={styles.buttonContainer}>
             <button className={styles.hireButton}>Hire Me</button>
